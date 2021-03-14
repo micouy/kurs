@@ -58,13 +58,13 @@ function update(game) {
 	for (let y = 0; y < 24; y++) {
     	for (let x = 0; x < 24; x++) {
         	if (cells1[y][x] == 0) {
-            	// Martwe komórki rysuję na czarno.
-
-            	game.setDot(x, y, Color.Black);
-        	} else {
-				// Żywe komórki rysuję na żółto.
+            	// Martwe komórki rysuję na żółto.
 
             	game.setDot(x, y, Color.Yellow);
+        	} else {
+				// Żywe komórki rysuję na fioletowo.
+
+            	game.setDot(x, y, Color.Indigo);
         	}
     	}
 	}
