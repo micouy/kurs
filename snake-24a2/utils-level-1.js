@@ -76,8 +76,11 @@ function ranIntoItself(snake) {
 
 function drawSnake(snake) {
     for (let part of snake) {
-        game.setDot(part.x, part.y, Color.Blue);
+        game.setDot(part.x, part.y, Color.Yellow);
     }
+
+    let head = getHead(snake);
+    game.setDot(head.x, head.y, Color.Orange);
 }
 
 function drawBerry(berry) {
@@ -89,7 +92,6 @@ function printPoints(game, points) {
 }
 
 function gameOver(game, points) {
-    console.log("dupa");
     game.setText(`Game Over. You got ${points} points.`);
     game.end();
 }

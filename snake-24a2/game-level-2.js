@@ -124,8 +124,11 @@ function update(game) {
 
     // draw
     for (let part of snake) {
-        game.setDot(part.x, part.y, Color.Blue);
+        game.setDot(part.x, part.y, Color.Yellow);
     }
+
+    head = getHead(snake);
+    game.setDot(head.x, head.y, Color.Orange);
 
     game.setDot(berry.x, berry.y, Color.Red);
     game.setText(`Points: ${snake.length}`);
@@ -135,6 +138,7 @@ function update(game) {
 }
 
 function onKeyPress(arrow) {
+    // allow only orthogonal directions
     if (readyToReceiveKeys) {
         if ((direction == Direction.Right || direction == Direction.Left) &&
             (arrow == Direction.Up || arrow == Direction.Down)) {
@@ -152,6 +156,7 @@ let config = {
     create: create,
     update: update,
     onKeyPress: onKeyPress,
+    defaultDotColor: Color.Green,
     clearGrid: true,
     frameRate: 10,
 };

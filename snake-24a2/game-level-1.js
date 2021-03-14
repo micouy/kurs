@@ -23,6 +23,8 @@ DOSTĘPNE FUNKCJE:
 - gameOver(game, points)
 */
 
+let pause = false;
+
 function create(game) {
     // add a snake with length of 3
     snake = [
@@ -40,12 +42,15 @@ function create(game) {
 }
 
 function update(game) {
+    if (pause) {
+        game.end();
+    }
+
     extendSnake(snake, direction);
     let head = getHead(snake);
 
     if (touch(head, berry)) {
         pickNewBerryPosition(berry, snake);
-        console.log(berry);
     } else {
         cutSnakesTail(snake);
     }
@@ -70,6 +75,7 @@ let config = {
     create: create,
     update: update,
     onKeyPress: onKeyPress,
+    defaultDotColor: Color.Green,
     clearGrid: true,
     frameRate: 10,
 };
