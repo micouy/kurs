@@ -1,4 +1,4 @@
-#![Banner](/images/banner.png)
+![Banner](/images/banner.png)
 
 # Materiały do Kursu Programowania dla Początkujących
 
@@ -6,9 +6,9 @@
 
 ## Projekty
 
-* #[Paint](/paint/)
-* #[Snake](/snake/)
-* #[Gra w Życie](/game-of-life/)
-* #[Platformówka](/platformer/)
-* #[Wirtualne pianino](/piano/)
-* #[Animacja deszczu](/rain/)
+* [Paint](/paint/)
+* [Snake](/snake/)
+* [Gra w Życie](/game-of-life/)
+* [Platformówka](/platformer/)
+* [Wirtualne pianino](/piano/)
+* [Animacja deszczu](/rain/)
