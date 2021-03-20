@@ -4,6 +4,8 @@
 
 ## Lekcje
 
+* [Lekcja 1](/lekcja-1/)
+
 ## Projekty
 
 * [Paint](/paint/)
