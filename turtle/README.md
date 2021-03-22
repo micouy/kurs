@@ -1,4 +1,4 @@
-![Żółw](/assets/turtle.png)
+![Żółw](/images/turtle.png)
 
 # Żółw
 
