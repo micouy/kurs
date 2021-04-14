@@ -2,11 +2,9 @@
 
 # Materiały do Kursu Programowania dla Początkujących
 
-## Lekcje
-
-* [Lekcja 1](/lekcja-1/)
-
 ## Projekty
+
+**[Zobacz interaktywne demo!](https://micouy.github.io/kurs-programowania/)**
 
 * [Paint](/paint/)
 * [Snake](/snake/)
@@ -15,3 +13,8 @@
 * [Wirtualne pianino](/piano/)
 * [Animacja deszczu](/rain/)
 * [Żółw](/turtle/)
+
+
+## Lekcje
+
+* [Lekcja 1](/lekcja-1/)
